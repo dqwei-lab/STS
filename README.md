@@ -4,233 +4,231 @@ codes for membrane transporter paper:
 2. all the tables and figs can be reproduced via jupyter notebooks.
 3. Regarding the raw feature extraction pipeline, these codes and data are provided upon request.
 
-
 Dependencies:
-
-alabaster==0.7.12
-anaconda-client==1.7.2
-anaconda-navigator==1.9.7
-anaconda-project==0.8.3
-arff==0.9
-asn1crypto==0.24.0
-astroid==2.2.5
-astropy==3.2.1
-atomicwrites==1.3.0
-attrs==19.1.0
-Babel==2.7.0
-backcall==0.1.0
-backports.functools-lru-cache==1.5
-backports.os==0.1.1
-backports.shutil-get-terminal-size==1.0.0
-backports.tempfile==1.0
-backports.weakref==1.0.post1
-beautifulsoup4==4.7.1
-bitarray==0.9.3
-bkcharts==0.2
-bleach==3.1.0
-bokeh==1.2.0
-boto==2.49.0
-boto3==1.9.220
-botocore==1.12.220
-Bottleneck==1.2.1
-certifi==2019.6.16
-cffi==1.12.3
-chardet==3.0.4
-Click==7.0
-cloudpickle==1.2.1
-clyent==1.2.2
-colorama==0.4.1
-comtypes==1.1.7
-conda==4.7.10
-conda-build==3.18.8
-conda-package-handling==1.3.11
-conda-verify==3.4.2
-contextlib2==0.5.5
-cryptography==2.7
-cycler==0.10.0
-Cython==0.29.12
-cytoolz==0.10.0
-dask==2.1.0
-decorator==4.4.0
-defusedxml==0.6.0
-distributed==2.1.0
-docutils==0.14
-entrypoints==0.3
-et-xmlfile==1.0.1
-fastcache==1.1.0
-filelock==3.0.12
-Flask==1.1.1
-future==0.17.1
-gensim==3.8.0
-gevent==1.4.0
-glob2==0.7
-greenlet==0.4.15
-h5py==2.9.0
-heapdict==1.0.0
-html5lib==1.0.1
-idna==2.8
-imageio==2.5.0
-imagesize==1.1.0
-importlib-metadata==0.17
-ipykernel==5.1.1
-ipython==7.6.1
-ipython-genutils==0.2.0
-ipywidgets==7.5.0
-isort==4.3.21
-itsdangerous==1.1.0
-jdcal==1.4.1
-jedi==0.13.3
-Jinja2==2.10.1
-jmespath==0.9.4
-joblib==0.13.2
-json5==0.8.4
-jsonschema==3.0.1
-jupyter==1.0.0
-jupyter-client==5.3.1
-jupyter-console==6.0.0
-jupyter-core==4.5.0
-jupyterlab==1.0.2
-jupyterlab-server==1.0.0
-keyring==18.0.0
-kiwisolver==1.1.0
-lazy-object-proxy==1.4.1
-libarchive-c==2.8
-lightgbm==2.2.3
-llvmlite==0.29.0
-locket==0.2.0
-lxml==4.3.4
-MarkupSafe==1.1.1
-matplotlib==3.1.0
-mccabe==0.6.1
-menuinst==1.4.16
-mistune==0.8.4
-mkl-fft==1.0.12
-mkl-random==1.0.2
-mkl-service==2.0.2
-mlxtend==0.17.0
-mock==3.0.5
-mol2vec==0.1
-MolVS==0.1.1
-more-itertools==7.0.0
-mpmath==1.1.0
-msgpack==0.6.1
-multipledispatch==0.6.0
-navigator-updater==0.2.1
-nbconvert==5.5.0
-nbformat==4.4.0
-networkx==2.3
-nltk==3.4.4
-nose==1.3.7
-notebook==6.0.0
-numba==0.44.1
-numexpr==2.6.9
-numpy==1.16.4
-numpydoc==0.9.1
-olefile==0.46
-openpyxl==2.6.2
-packaging==19.0
-pandas==0.24.2
-pandocfilters==1.4.2
-parso==0.5.0
-partd==1.0.0
-path.py==12.0.1
-pathlib2==2.3.4
-patsy==0.5.1
-pep8==1.7.1
-pickleshare==0.7.5
-Pillow==6.1.0
-pkginfo==1.5.0.1
-pluggy==0.12.0
-ply==3.11
-prometheus-client==0.7.1
-prompt-toolkit==2.0.9
-psutil==5.6.3
-py==1.8.0
-pycairo==1.18.1
-pycodestyle==2.5.0
-pycosat==0.6.3
-pycparser==2.19
-pycrypto==2.6.1
-pycurl==7.43.0.3
-pyflakes==2.1.1
-Pygments==2.4.2
-pylint==2.3.1
-pyodbc==4.0.26
-pyOpenSSL==19.0.0
-pyparsing==2.4.0
-pyreadline==2.1
-pyrsistent==0.14.11
-PySocks==1.7.0
-pytest==5.0.1
-pytest-arraydiff==0.3
-pytest-astropy==0.5.0
-pytest-doctestplus==0.3.0
-pytest-openfiles==0.3.2
-pytest-remotedata==0.3.1
-python-dateutil==2.8.0
-python-louvain==0.13
-pytz==2019.1
-PyWavelets==1.0.3
-pywin32==223
-pywinpty==0.5.5
-PyYAML==5.1.1
-pyzmq==18.0.0
-QtAwesome==0.5.7
-qtconsole==4.5.1
-QtPy==1.8.0
-requests==2.22.0
-rope==0.14.0
-ruamel-yaml==0.15.46
-s3transfer==0.2.1
-scikit-image==0.15.0
-scikit-learn==0.20.3
-scikit-multilearn==0.2.0
-scipy==1.2.1
-seaborn==0.9.0
-Send2Trash==1.5.0
-simplegeneric==0.8.1
-singledispatch==3.4.0.3
-six==1.12.0
-smart-open==1.8.4
-snowballstemmer==1.9.0
-sortedcollections==1.1.2
-sortedcontainers==2.1.0
-soupsieve==1.8
-Sphinx==2.1.2
-sphinxcontrib-applehelp==1.0.1
-sphinxcontrib-devhelp==1.0.1
-sphinxcontrib-htmlhelp==1.0.2
-sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-qthelp==1.0.2
-sphinxcontrib-serializinghtml==1.1.3
-sphinxcontrib-websupport==1.1.2
-spyder==3.3.6
-spyder-kernels==0.5.1
-SQLAlchemy==1.3.5
-statsmodels==0.10.0
-sympy==1.4
-tables==3.5.2
-tblib==1.4.0
-terminado==0.8.2
-testpath==0.4.2
-toolz==0.10.0
-tornado==6.0.3
-tqdm==4.32.1
-traitlets==4.3.2
-unicodecsv==0.14.1
-urllib3==1.24.2
-wcwidth==0.1.7
-webencodings==0.5.1
-Werkzeug==0.15.4
-widgetsnbextension==3.5.0
-win-inet-pton==1.1.0
-win-unicode-console==0.5
-wincertstore==0.2
-wrapt==1.11.2
-xgboost==0.90
-xlrd==1.2.0
-XlsxWriter==1.1.8
-xlwings==0.15.8
-xlwt==1.3.0
-zict==1.0.0
-zipp==0.5.1
+1.	alabaster==0.7.12
+2.	anaconda-client==1.7.2
+3.	anaconda-navigator==1.9.7
+4.	anaconda-project==0.8.3
+5.	arff==0.9
+6.	asn1crypto==0.24.0
+7.	astroid==2.2.5
+8.	astropy==3.2.1
+9.	atomicwrites==1.3.0
+10.	attrs==19.1.0
+11.	Babel==2.7.0
+12.	backcall==0.1.0
+13.	backports.functools-lru-cache==1.5
+14.	backports.os==0.1.1
+15.	backports.shutil-get-terminal-size==1.0.0
+16.	backports.tempfile==1.0
+17.	backports.weakref==1.0.post1
+18.	beautifulsoup4==4.7.1
+19.	bitarray==0.9.3
+20.	bkcharts==0.2
+21.	bleach==3.1.0
+22.	bokeh==1.2.0
+23.	boto==2.49.0
+24.	boto3==1.9.220
+25.	botocore==1.12.220
+26.	Bottleneck==1.2.1
+27.	certifi==2019.6.16
+28.	cffi==1.12.3
+29.	chardet==3.0.4
+30.	Click==7.0
+31.	cloudpickle==1.2.1
+32.	clyent==1.2.2
+33.	colorama==0.4.1
+34.	comtypes==1.1.7
+35.	conda==4.7.10
+36.	conda-build==3.18.8
+37.	conda-package-handling==1.3.11
+38.	conda-verify==3.4.2
+39.	contextlib2==0.5.5
+40.	cryptography==2.7
+41.	cycler==0.10.0
+42.	Cython==0.29.12
+43.	cytoolz==0.10.0
+44.	dask==2.1.0
+45.	decorator==4.4.0
+46.	defusedxml==0.6.0
+47.	distributed==2.1.0
+48.	docutils==0.14
+49.	entrypoints==0.3
+50.	et-xmlfile==1.0.1
+51.	fastcache==1.1.0
+52.	filelock==3.0.12
+53.	Flask==1.1.1
+54.	future==0.17.1
+55.	gensim==3.8.0
+56.	gevent==1.4.0
+57.	glob2==0.7
+58.	greenlet==0.4.15
+59.	h5py==2.9.0
+60.	heapdict==1.0.0
+61.	html5lib==1.0.1
+62.	idna==2.8
+63.	imageio==2.5.0
+64.	imagesize==1.1.0
+65.	importlib-metadata==0.17
+66.	ipykernel==5.1.1
+67.	ipython==7.6.1
+68.	ipython-genutils==0.2.0
+69.	ipywidgets==7.5.0
+70.	isort==4.3.21
+71.	itsdangerous==1.1.0
+72.	jdcal==1.4.1
+73.	jedi==0.13.3
+74.	Jinja2==2.10.1
+75.	jmespath==0.9.4
+76.	joblib==0.13.2
+77.	json5==0.8.4
+78.	jsonschema==3.0.1
+79.	jupyter==1.0.0
+80.	jupyter-client==5.3.1
+81.	jupyter-console==6.0.0
+82.	jupyter-core==4.5.0
+83.	jupyterlab==1.0.2
+84.	jupyterlab-server==1.0.0
+85.	keyring==18.0.0
+86.	kiwisolver==1.1.0
+87.	lazy-object-proxy==1.4.1
+88.	libarchive-c==2.8
+89.	lightgbm==2.2.3
+90.	llvmlite==0.29.0
+91.	locket==0.2.0
+92.	lxml==4.3.4
+93.	MarkupSafe==1.1.1
+94.	matplotlib==3.1.0
+95.	mccabe==0.6.1
+96.	menuinst==1.4.16
+97.	mistune==0.8.4
+98.	mkl-fft==1.0.12
+99.	mkl-random==1.0.2
+100.	mkl-service==2.0.2
+101.	mlxtend==0.17.0
+102.	mock==3.0.5
+103.	mol2vec==0.1
+104.	MolVS==0.1.1
+105.	more-itertools==7.0.0
+106.	mpmath==1.1.0
+107.	msgpack==0.6.1
+108.	multipledispatch==0.6.0
+109.	navigator-updater==0.2.1
+110.	nbconvert==5.5.0
+111.	nbformat==4.4.0
+112.	networkx==2.3
+113.	nltk==3.4.4
+114.	nose==1.3.7
+115.	notebook==6.0.0
+116.	numba==0.44.1
+117.	numexpr==2.6.9
+118.	numpy==1.16.4
+119.	numpydoc==0.9.1
+120.	olefile==0.46
+121.	openpyxl==2.6.2
+122.	packaging==19.0
+123.	pandas==0.24.2
+124.	pandocfilters==1.4.2
+125.	parso==0.5.0
+126.	partd==1.0.0
+127.	path.py==12.0.1
+128.	pathlib2==2.3.4
+129.	patsy==0.5.1
+130.	pep8==1.7.1
+131.	pickleshare==0.7.5
+132.	Pillow==6.1.0
+133.	pkginfo==1.5.0.1
+134.	pluggy==0.12.0
+135.	ply==3.11
+136.	prometheus-client==0.7.1
+137.	prompt-toolkit==2.0.9
+138.	psutil==5.6.3
+139.	py==1.8.0
+140.	pycairo==1.18.1
+141.	pycodestyle==2.5.0
+142.	pycosat==0.6.3
+143.	pycparser==2.19
+144.	pycrypto==2.6.1
+145.	pycurl==7.43.0.3
+146.	pyflakes==2.1.1
+147.	Pygments==2.4.2
+148.	pylint==2.3.1
+149.	pyodbc==4.0.26
+150.	pyOpenSSL==19.0.0
+151.	pyparsing==2.4.0
+152.	pyreadline==2.1
+153.	pyrsistent==0.14.11
+154.	PySocks==1.7.0
+155.	pytest==5.0.1
+156.	pytest-arraydiff==0.3
+157.	pytest-astropy==0.5.0
+158.	pytest-doctestplus==0.3.0
+159.	pytest-openfiles==0.3.2
+160.	pytest-remotedata==0.3.1
+161.	python-dateutil==2.8.0
+162.	python-louvain==0.13
+163.	pytz==2019.1
+164.	PyWavelets==1.0.3
+165.	pywin32==223
+166.	pywinpty==0.5.5
+167.	PyYAML==5.1.1
+168.	pyzmq==18.0.0
+169.	QtAwesome==0.5.7
+170.	qtconsole==4.5.1
+171.	QtPy==1.8.0
+172.	requests==2.22.0
+173.	rope==0.14.0
+174.	ruamel-yaml==0.15.46
+175.	s3transfer==0.2.1
+176.	scikit-image==0.15.0
+177.	scikit-learn==0.20.3
+178.	scikit-multilearn==0.2.0
+179.	scipy==1.2.1
+180.	seaborn==0.9.0
+181.	Send2Trash==1.5.0
+182.	simplegeneric==0.8.1
+183.	singledispatch==3.4.0.3
+184.	six==1.12.0
+185.	smart-open==1.8.4
+186.	snowballstemmer==1.9.0
+187.	sortedcollections==1.1.2
+188.	sortedcontainers==2.1.0
+189.	soupsieve==1.8
+190.	Sphinx==2.1.2
+191.	sphinxcontrib-applehelp==1.0.1
+192.	sphinxcontrib-devhelp==1.0.1
+193.	sphinxcontrib-htmlhelp==1.0.2
+194.	sphinxcontrib-jsmath==1.0.1
+195.	sphinxcontrib-qthelp==1.0.2
+196.	sphinxcontrib-serializinghtml==1.1.3
+197.	sphinxcontrib-websupport==1.1.2
+198.	spyder==3.3.6
+199.	spyder-kernels==0.5.1
+200.	SQLAlchemy==1.3.5
+201.	statsmodels==0.10.0
+202.	sympy==1.4
+203.	tables==3.5.2
+204.	tblib==1.4.0
+205.	terminado==0.8.2
+206.	testpath==0.4.2
+207.	toolz==0.10.0
+208.	tornado==6.0.3
+209.	tqdm==4.32.1
+210.	traitlets==4.3.2
+211.	unicodecsv==0.14.1
+212.	urllib3==1.24.2
+213.	wcwidth==0.1.7
+214.	webencodings==0.5.1
+215.	Werkzeug==0.15.4
+216.	widgetsnbextension==3.5.0
+217.	win-inet-pton==1.1.0
+218.	win-unicode-console==0.5
+219.	wincertstore==0.2
+220.	wrapt==1.11.2
+221.	xgboost==0.90
+222.	xlrd==1.2.0
+223.	XlsxWriter==1.1.8
+224.	xlwings==0.15.8
+225.	xlwt==1.3.0
+226.	zict==1.0.0
+227.	zipp==0.5.1
